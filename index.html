@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Online Course</title>
+</head>
+<body>
+    <header>
+        <h1>Anand Online Course</h1>
+        <nav>
+            <ul>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured">
+            <h2>Featured Course</h2>
+            <div class="featured-course">
+                <h3>Advanced Web Development</h3>
+                <p>Take your web development skills to the next level with this advanced course.</p>
+                <button onclick="enroll(4)">Enroll Now</button>
+                <p>Watch the introduction video: <a href="www.linkedin.com/in/anandan2257" target="_blank">Introduction Video</a></p>
+            </div>
+        </section>
+
+        <section id="courses">
+            <h2>Available Courses</h2>
+        </section>
+
+        <section id="registration">
+            <h2>Registration</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="course">Select a Course:</label>
+                <select id="course" name="course">
+                    <option value="1">Introduction to Web Development</option>
+                    <option value="2">JavaScript Fundamentals</option>
+                    <option value="3">Responsive Web Design</option>
+                    <option value="4">Advanced Web Development</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="Contact">
+        <p>&copy; 2023 <a href="www.linkedin.com/in/anandan2257" target="_blank">Anand</a> Online Course</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
